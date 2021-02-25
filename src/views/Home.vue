@@ -3,7 +3,8 @@
     <img alt="Vue logo" src="../assets/logo.png">
     <!-- <HelloWorld /> -->
     <!-- <Js /> -->
-    <This />
+    <!-- <This /> -->
+    <String/>
   </div>
 </template>
 
@@ -12,13 +13,15 @@
 import HelloWorld from '@/components/HelloWorld.vue'
 import Js from '@/components/Js.vue'
 import This from '@/components/This.vue'
+import String from '@/components/String.vue'
 
 export default {
   name: 'Home',
   components: {
     HelloWorld,
     Js,
-    This
+    This,
+    String
   }
 }
 </script>
