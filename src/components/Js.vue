@@ -24,8 +24,12 @@ export default {
             for(var p in person){
                 // console.log(person[p]);
             }
-            var x = 
-            console.log("sfa"+typeof x);
+            var x = {
+                callName:function(){
+                    return  "asdf";
+                }
+            }
+            console.log(x.callName());
         }  
     },
     created(){
