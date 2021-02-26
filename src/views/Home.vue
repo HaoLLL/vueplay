@@ -7,22 +7,38 @@
     <!-- <This /> -->
     <!-- <String/> -->
     <!-- <div :style="{fontSize:postFontSize+'em'}"> -->
-  
-          <!-- <blog-post 
+
+    <!-- <blog-post 
     v-for="post in posts"
     v-bind:key="post.id"
     v-bind:title="post.title"
     v-on:enlarge-text="postFontSize+=$event"
     >
     </blog-post> -->
-    <slot-example>
+    <!-- <slot-example>
       
-    </slot-example> 
-    
+    </slot-example>  -->
 
     <!-- </div> -->
 
     <!-- <button-counter></button-counter> -->
+    <base-layout>
+      <template v-slot:header>
+        <h1>Header</h1>
+      </template>
+      <template v-slot:default>
+        <h1>Content1</h1>
+        <h1>Content2</h1>
+
+      </template>
+      <template v-slot:footer>
+        <h1>Footer</h1>
+      </template>
+      <template v-slot:userName="parentUser">
+        {{parentUser.user.name}}
+      </template>
+
+    </base-layout>
   </div>
 </template>
 
@@ -35,6 +51,7 @@ import String from "@/components/String.vue";
 import ButtonCounter from "@/components/ButtonCounter.vue";
 import BlogPost from "@/components/BlogPost.vue";
 import SlotExample from "@/components/SlotExample.vue";
+import BaseLayout from "@/components/BaseLayout.vue";
 
 export default {
   name: "Home",
@@ -45,7 +62,8 @@ export default {
     String,
     ButtonCounter,
     BlogPost,
-    SlotExample
+    SlotExample,
+    BaseLayout,
   },
   data() {
     return {
@@ -54,7 +72,7 @@ export default {
         { id: 2, title: "Blogging with Vue" },
         { id: 3, title: "Why Vue is so fun" },
       ],
-      postFontSize:1
+      postFontSize: 1,
     };
   },
 };
