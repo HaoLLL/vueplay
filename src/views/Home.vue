@@ -6,11 +6,22 @@
     <!-- <Js /> -->
     <!-- <This /> -->
     <!-- <String/> -->
-    <blog-post 
+    <!-- <div :style="{fontSize:postFontSize+'em'}"> -->
+  
+          <!-- <blog-post 
     v-for="post in posts"
     v-bind:key="post.id"
-    v-bind:title="post.title">
-    </blog-post>
+    v-bind:title="post.title"
+    v-on:enlarge-text="postFontSize+=$event"
+    >
+    </blog-post> -->
+    <slot-example>
+      
+    </slot-example> 
+    
+
+    <!-- </div> -->
+
     <!-- <button-counter></button-counter> -->
   </div>
 </template>
@@ -23,6 +34,7 @@ import This from "@/components/This.vue";
 import String from "@/components/String.vue";
 import ButtonCounter from "@/components/ButtonCounter.vue";
 import BlogPost from "@/components/BlogPost.vue";
+import SlotExample from "@/components/SlotExample.vue";
 
 export default {
   name: "Home",
@@ -33,6 +45,7 @@ export default {
     String,
     ButtonCounter,
     BlogPost,
+    SlotExample
   },
   data() {
     return {
@@ -41,6 +54,7 @@ export default {
         { id: 2, title: "Blogging with Vue" },
         { id: 3, title: "Why Vue is so fun" },
       ],
+      postFontSize:1
     };
   },
 };
