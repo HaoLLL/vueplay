@@ -8,13 +8,13 @@
     <!-- <String/> -->
     <!-- <div :style="{fontSize:postFontSize+'em'}"> -->
 
-    <!-- <blog-post 
+    <blog-post 
     v-for="post in posts"
     v-bind:key="post.id"
     v-bind:title="post.title"
     v-on:enlarge-text="postFontSize+=$event"
     >
-    </blog-post> -->
+    </blog-post>
     <!-- <slot-example>
       
     </slot-example>  -->
@@ -22,7 +22,7 @@
     <!-- </div> -->
 
     <!-- <button-counter></button-counter> -->
-    <base-layout>
+    <!-- <base-layout>
       <template v-slot:header>
         <h1>Header</h1>
       </template>
@@ -38,7 +38,7 @@
         {{parentUser.user.name}}
       </template>
 
-    </base-layout>
+    </base-layout> -->
   </div>
 </template>
 
