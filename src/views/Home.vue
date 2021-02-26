@@ -40,7 +40,8 @@
 
     </base-layout> -->
     <!-- <Event v-model="lovingVue"/> -->
-    <Function/>
+    <!-- <Function/> -->
+    <Closure/>
   </div>
 </template>
 
@@ -56,6 +57,7 @@ import SlotExample from "@/components/SlotExample.vue";
 import BaseLayout from "@/components/BaseLayout.vue";
 import Event from "@/components/Event.vue";
 import Function from "@/components/Function.vue";
+import Closure from "@/components/Closure.vue";
 
 export default {
   name: "Home",
@@ -69,7 +71,8 @@ export default {
     SlotExample,
     BaseLayout,
     Event,
-    Function
+    Function,
+    Closure
   },
   data() {
     return {
