@@ -8,13 +8,13 @@
     <!-- <String/> -->
     <!-- <div :style="{fontSize:postFontSize+'em'}"> -->
 
-    <blog-post 
+    <!-- <blog-post 
     v-for="post in posts"
     v-bind:key="post.id"
     v-bind:title="post.title"
     v-on:enlarge-text="postFontSize+=$event"
     >
-    </blog-post>
+    </blog-post> -->
     <!-- <slot-example>
       
     </slot-example>  -->
@@ -39,6 +39,8 @@
       </template>
 
     </base-layout> -->
+    <!-- <Event v-model="lovingVue"/> -->
+    <Function/>
   </div>
 </template>
 
@@ -52,6 +54,8 @@ import ButtonCounter from "@/components/ButtonCounter.vue";
 import BlogPost from "@/components/BlogPost.vue";
 import SlotExample from "@/components/SlotExample.vue";
 import BaseLayout from "@/components/BaseLayout.vue";
+import Event from "@/components/Event.vue";
+import Function from "@/components/Function.vue";
 
 export default {
   name: "Home",
@@ -64,6 +68,8 @@ export default {
     BlogPost,
     SlotExample,
     BaseLayout,
+    Event,
+    Function
   },
   data() {
     return {
