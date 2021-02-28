@@ -41,7 +41,7 @@
     </base-layout> -->
     <!-- <Event v-model="lovingVue"/> -->
     <!-- <Function/> -->
-    <Closure/>
+    <Css/>
   </div>
 </template>
 
@@ -58,6 +58,7 @@ import BaseLayout from "@/components/BaseLayout.vue";
 import Event from "@/components/Event.vue";
 import Function from "@/components/Function.vue";
 import Closure from "@/components/Closure.vue";
+import Css from "@/components/Css.vue";
 
 export default {
   name: "Home",
@@ -72,7 +73,8 @@ export default {
     BaseLayout,
     Event,
     Function,
-    Closure
+    Closure,
+    Css
   },
   data() {
     return {

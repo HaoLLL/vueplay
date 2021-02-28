@@ -1,12 +1,22 @@
 <template>
   <div id="app">
-    <div id="nav">
+    <!-- <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
     </div>
-    <router-view/>
+    <router-view/> -->
+    <BasicVue/>
   </div>
 </template>
+<script>
+import BasicVue from './components/BasicVue';
+export default {
+  components:{
+    BasicVue
+  }
+
+}
+</script>
 
 <style>
 #app {
