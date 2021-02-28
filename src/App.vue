@@ -1,18 +1,22 @@
 <template>
-  <div id="app">
+
     <!-- <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
     </div>
     <router-view/> -->
-    <BasicVue/>
-  </div>
+    <MyTeleport/>
+    
+
 </template>
 <script>
-import BasicVue from './components/BasicVue';
+import CommonVue from './components/LessonVue/CommonVue';
+import MyTeleport from './components/LessonVue/Teleport';
 export default {
+  name:'App',
   components:{
-    BasicVue
+    MyTeleport,
+    CommonVue
   }
 
 }
